@@ -2,6 +2,7 @@ import React from 'react';
 import { Text } from 'react-native';
 import { StyleSheet } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { COLORS } from '../constants/colors';
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
 
 const styles = StyleSheet.create({
     container: {
-      backgroundColor: '#1A1A1A'
+      backgroundColor: COLORS.primaryColor,
     }
 });
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import {Text} from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StyleSheet } from 'react-native';
+import { COLORS } from '../constants/colors';
 
 const Notifications = () => {
   return (<SafeAreaProvider style={styles.container}></SafeAreaProvider>);
@@ -9,7 +9,7 @@ const Notifications = () => {
 
 const styles = StyleSheet.create({
     container: {
-      backgroundColor: '#1A1A1A'
+      backgroundColor:  COLORS.primaryColor,
     } 
 })
 export default Notifications;

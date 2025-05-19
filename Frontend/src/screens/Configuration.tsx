@@ -1,7 +1,8 @@
 import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
-import {StyleSheet} from 'react-native';
+import { SafeAreaView } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { COLORS } from '../constants/colors';
 
 const Configuration = () => {
   return (<SafeAreaProvider>
@@ -14,7 +15,7 @@ const Configuration = () => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#1A1A1A',
+      backgroundColor: COLORS.primaryColor,
     }
 });
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StyleSheet } from 'react-native';
+import { COLORS } from '../constants/colors';
 
 const Profile = () => {
   return (<SafeAreaProvider style={styles.container}></SafeAreaProvider>);
@@ -8,7 +9,7 @@ const Profile = () => {
 
 const styles  =  StyleSheet.create({
   container : {
-    backgroundColor: '#1A1A1A'
+    backgroundColor: COLORS.primaryColor,
   }
 })
 
