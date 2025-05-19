@@ -6,7 +6,6 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 const Configuration = () => {
   return (<SafeAreaProvider>
     <SafeAreaView style={styles.container}>
-      <Text>React Native</Text>
     </SafeAreaView>
   </SafeAreaProvider>
   )

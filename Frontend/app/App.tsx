@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ContextStateProvider } from "../src/ContextState";
+import { ContextStateProvider } from "../contexts/ContextState";
 import Router from "../Router";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
@@ -9,9 +9,9 @@ SplashScreen.preventAutoHideAsync();
 
 const App = () => {
   const [fontsLoaded] = useFonts({
-      'JetBrainsMono-Regular': require('../src/assets/Fonts/JetBrainsMono-Regular.otf'),
-      'JetBrainsMono-Light': require('../src/assets/Fonts/JetBrainsMono-Light.otf'),
-      'JetBrainsMono-Bold': require('../src/assets/Fonts/JetBrainsMono-Bold.otf'),
+      'JetBrainsMono-Regular': require('../src/assets/fonts/JetBrainsMono-Regular.otf'),
+      'JetBrainsMono-Light': require('../src/assets/fonts/JetBrainsMono-Light.otf'),
+      'JetBrainsMono-Bold': require('../src/assets/fonts/JetBrainsMono-Bold.otf'),
   });
 
   useEffect(() => {
