@@ -8,13 +8,9 @@ import { Routes } from "../src/common/enums/Routes";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { COLORS } from "@/src/constants/colors";
 import { HomeOffIcon, 
-        HomeOnIcon, 
-        NotificationsOnIcon,  
         NotificationsOffIcon,
-        SettingsOnIcon,
         SettingsOffIcon,
         MemberOffIcon,
-        MemberOnIcon  
 } from "../src/components/icons/iconIndex";
 
 const Drawer = createDrawerNavigator();
@@ -28,7 +24,7 @@ const Router = () =>  {
                 drawerActiveTintColor:  COLORS.white,
                 drawerInactiveTintColor: COLORS.white,
                 headerTitle: "", headerTransparent: true, headerTintColor: COLORS.white }}>
-                    
+
                 <Drawer.Screen options={{
                     drawerIcon: () => (<HomeOffIcon width={20} height={18}/>)}}
                     name={Routes.Home} component={Home}/>

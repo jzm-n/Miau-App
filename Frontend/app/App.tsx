@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ContextStateProvider } from "../contexts/ContextState";
 import Router from "./Router";
-import { useCustomFonts } from "@/src/hooks/useFonts";
+import { useCustomFonts } from "@/src/hooks/useCustomFonts";
 
 const App = () => {
  const [fontsLoaded] = useCustomFonts();
