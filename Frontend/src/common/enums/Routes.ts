@@ -2,5 +2,5 @@ export enum Routes {
     Home = "Inicio",
     Profile = "Perfil",
     Notifications = "Notificaciones",
-    Configuration = "configuración"
+    Configuration = "Configuración"
 }
