@@ -12,6 +12,7 @@ import { HomeOffIcon,
         SettingsOffIcon,
         MemberOffIcon,
 } from "../src/components/icons/iconIndex";
+import { HeaderHeightContext } from "@react-navigation/elements";
 
 const Drawer = createDrawerNavigator();
 
@@ -23,8 +24,7 @@ const Router = () =>  {
                 drawerLabelStyle: {fontFamily: 'JetBrainsMono-Regular'},
                 drawerActiveTintColor:  COLORS.white,
                 drawerInactiveTintColor: COLORS.white,
-                headerTitle: "", headerTransparent: true, headerTintColor: COLORS.white }}>
-
+                headerTitle: "", headerTransparent: true, headerTintColor: COLORS.white, headerStatusBarHeight: 0 }}>
                 <Drawer.Screen options={{
                     drawerIcon: () => (<HomeOffIcon width={20} height={18}/>)}}
                     name={Routes.Home} component={Home}/>
