@@ -11,7 +11,7 @@ import { HomeOffIcon,
         NotificationsOffIcon,
         SettingsOffIcon,
         MemberOffIcon,
-} from "../src/components/icons/iconIndex";
+} from "../src/components/iconIndex";
 import { HeaderHeightContext } from "@react-navigation/elements";
 
 const Drawer = createDrawerNavigator();
